@@ -1,0 +1,151 @@
+1. git config command:
+   - This command configure the user. The git config command is the first and necessary
+     command used on the git command line.
+
+   - This command sets the author name and email address to be used with your commits.
+     Git config is also used in other scenarios.
+
+Syntax:
+   $ git config --global user.name  "shankar"
+   $ git config --gloabl user.email "shankar@gmail.com"
+
+2. git init command:
+   - This command is used to create a local repository. The init command will initialize
+     an empty git repository.
+
+Syntax:
+   $ git init Demo
+   - Initialized empty git repository
+
+3. git clone command:
+   - This command is used to make a copy of a repository from an existing URL. If i want a
+     local copy of my repository from github, this command allows creating a local copy of that 
+     repository on your local directory from the repository URL.
+
+Syntax: 
+   - $ git clone URL
+   - $ git clone https://github.com/shankar/git-example.git
+
+4. git add command:
+   - This command is used to add one or more files to staging(index) area.
+
+Syntax:
+   * To add one file
+   - git add filename
+
+   * To add more than one file
+   - git add*
+
+5. git commit command:
+   - git commit command is used in two scenarios. They are as follows.
+
+   1. $ git commit -m "commit message"
+
+   - Above git command changes the head. It records or snapshots the file
+     permanently in the version history with a message.
+
+   2. $ git commit -a
+
+   - Above git command commits any files added in the repository with git add 
+     and also commits any files you will changed since then.
+
+   - $ git commit -a -m "commit message"
+
+6. git status command:
+   - The status command is used to display the state of the working directory
+     and the staging area.
+
+   - It allows you to see which changes have been staged, which haven't, and 
+     and which files aren't being tracked by git.
+
+   - It doesn't show you any information about the committed project history. 
+     For this, you need to use the 'git log' commnad.
+
+   - It alos lists the files that you will changed and those you still need to
+     add or commit.
+
+Syntax:
+   - $ git status
+
+7. git push command:
+   - It is used to upload local repository content to a remote repository. 
+     Pushing is an act of transfer from local reposiroty to a remote repo.
+
+   - It's the complement to 'git fetch',but whereas fetching imports commits
+     to local-branches on comparatively pushing exports commits to remote branches.
+
+   - Remote branches are configured by using the git remote command. Pushing is capable
+     of overwriting changes, and caution should be take when pushing.
+
+   *git push origin master*
+
+   - This command sends the changes made on the master branch, to your remote repository.
+
+Syntax:
+   - $ git push [variable name] master
+   - $ git push origin master
+
+
+   *git push --all*
+
+   - This command pushes all the branches to the server repository.
+ 
+Syntax:
+   - $ git push --all
+
+
+8. git pull command:
+   - Pull command is used to receive data from GitHub. It fetches &
+     merges changes on the remote server to your working directory.
+
+Syntax: 
+   - $ git pull URL
+   - $ git pull https://github.com/shankar/git-example
+
+9. git branch command:
+   - This command lists all the branches available in 
+     the repository.
+
+Syntax:
+   - $ git branch
+
+10. git merge command:
+    - This command is used to merge the specified branchs history into 
+      the current branch.
+
+Syntax:
+    - $ git merge brnachName
+    - $ git merge master
+
+
+11. git log command:
+
+Syntax:
+    - $ git log
+
+    - By default, if no argument passed, 'git log' shows the most recent
+      commits first.
+
+    - We can limit the number of log entries displayed by passing a number
+      as an option, such as -3 to show only the last three entries.
+
+    - $ git log -3
+
+
+12. git remote command:
+    - 'git remote' command is used to connect your local repository 
+       to the remote server.
+   
+    - This command allows you to create,view and delete connections
+      to other repositories.
+
+    - These connections are more like bookmarks rather than direct links
+      into other repositories.
+
+    - This command doesn't provide real time access to repositories.
+
+    - $ git remote add origin https://github.com/shankar/git-example
+
+
+
+
