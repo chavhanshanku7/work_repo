@@ -1,2 +1,0 @@
-first line in d.txt
-second line in d.txt
